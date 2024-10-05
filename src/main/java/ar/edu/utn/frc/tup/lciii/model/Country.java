@@ -16,10 +16,11 @@ import java.util.Map;
 @NoArgsConstructor
 public class Country {
     private String name;
-    private long population;
+    private Number population;
     private double area;
     private String code;
     private String region;
     private List<String> borders;
     private Map<String, String> languages;
+    private List<String> continents;
 }

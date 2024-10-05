@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
  * Completar segun corresponda
  */
 @Repository
-public interface CountryRepository {
+public interface CountryRepository  {
 }
