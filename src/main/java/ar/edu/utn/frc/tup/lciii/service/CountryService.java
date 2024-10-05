@@ -42,7 +42,7 @@ public class CountryService {
          * Agregar mapeo de campo cca3 (String)
          * Agregar mapeo campos borders ((List<String>))
          */
-        private Country mapToCountry(Map<String, Object> countryData) {
+        public Country mapToCountry(Map<String, Object> countryData) {
                 Map<String, Object> nameData = (Map<String, Object>) countryData.get("name");
                 String cca3 =  (String)countryData.get("cca3");
                 List<String> borders = (List<String>)countryData.get("borders");
@@ -67,7 +67,7 @@ public class CountryService {
         }
 
 
-        private CountryDTO mapToDTO(Country country) {
+        public CountryDTO mapToDTO(Country country) {
                 return new CountryDTO(country.getCode(), country.getName());
         }
 
